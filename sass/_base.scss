@@ -1,0 +1,66 @@
+:root {
+  --color-white: #faf5e6;
+  --color-dark: #4b484f;
+  --color-blue: #006d8e;
+  --color-yellow: #f2b22f;
+
+  --color-grey: #3b434c;
+
+  //RESPONSIVE BREAKPOINTS
+  --bp-largest: 87.5em !important;
+  --bp-large: 75em !important;
+  --bp-medium: 62em;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  @media only screen and (max-width: 75em) {
+    font-size: 50% !important;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  background-color: #383838 !important;
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+h1 {
+  line-height: 0.7 !important;
+}
+
+h2,
+h3 {
+  line-height: 0.9 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+}

@@ -1,0 +1,71 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.6rem 3.8rem !important;
+    display: inline-block;
+    border-radius: 100px !important;
+    transition: all 0.2s;
+    font-size: 1.6rem !important;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2) !important;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s !important;
+  }
+
+  &:active,
+  &:focus {
+    outline: none !important;
+  }
+
+  &--white {
+    background-color: var(--color-white) !important;
+    color: #28282a !important;
+  }
+
+  &--dark {
+    padding: 0.6rem 4.8rem !important;
+
+    background-color: #343434 !important;
+    color: #e7e7e7 !important;
+  }
+
+  &--yellow {
+    padding: 0.6rem 4.8rem !important;
+
+    background-color: #f2b22f !important;
+    color: #343434 !important;
+  }
+  // &--dark:hover {
+  //   color: var(--color-white) !important;
+  // }
+}
+
+.button {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.6rem 6.8rem !important;
+  display: inline-block;
+  border-radius: 100px !important;
+  font-size: 1.6rem !important;
+  background-color: var(--color-white) !important;
+  color: #28282a !important;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2) !important;
+
+  //Change for the <button> element
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:active {
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2) !important;
+  }
+
+  @media only screen and (max-width: 35.625em) {
+    padding: 0.6rem 4.8rem !important;
+  }
+}

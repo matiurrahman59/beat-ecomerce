@@ -1,0 +1,117 @@
+.offer-headphone {
+  background-color: #a1a1a1;
+  border-radius: 35px;
+  margin-top: 2rem;
+
+  @media only screen and (max-width: 35.625em) {
+    margin-top: 7rem;
+  }
+
+  .offer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18.5rem 0;
+
+    position: relative;
+
+    @media only screen and (max-width: 48em) {
+      padding: 5rem 0 10rem 0;
+
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    &-left {
+      position: relative;
+
+      @media only screen and (max-width: 48em) {
+        text-align: center;
+        position: static;
+        order: -2;
+      }
+
+      .heading-3 {
+        font-size: 4rem;
+        color: #343434;
+      }
+      .heading-2 {
+        font-size: 6rem;
+        color: #e7e7e7;
+      }
+      .btn--dark {
+        position: absolute;
+        bottom: -6rem;
+        @media only screen and (max-width: 48em) {
+          bottom: 2rem;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      @media only screen and (max-width: 48em) {
+        align-items: center;
+      }
+
+      .heading-3 {
+        font-size: 7.5rem;
+        color: #e7e7e7;
+
+        @media only screen and (max-width: 62em) {
+          font-size: 4rem;
+        }
+      }
+      .heading-1 {
+        font-size: 19rem;
+        color: #343434;
+
+        @media only screen and (max-width: 62em) {
+          font-size: 10rem;
+        }
+      }
+    }
+
+    &-img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      @media only screen and (max-width: 75em) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media only screen and (max-width: 48em) {
+        position: static;
+        left: none;
+        top: none;
+        transform: none;
+        order: -1;
+      }
+
+      img {
+        filter: drop-shadow(0 2rem 0.5rem rgba(0, 0, 0, 0.5));
+
+        @media only screen and (max-width: 75em) {
+          width: 70%;
+        }
+        @media only screen and (max-width: 62em) {
+          width: 60%;
+          margin-left: 20rem;
+        }
+        @media only screen and (max-width: 48em) {
+          margin-left: 0;
+        }
+        @media only screen and (max-width: 35.625em) {
+          width: 45%;
+        }
+      }
+    }
+  }
+}
